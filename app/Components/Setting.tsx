@@ -40,7 +40,7 @@ const Setting = () => {
       <button aria-describedby={id} onClick={handleClick}>
         <SettingsIcon
           fontSize="large"
-          className="text-white hover:bg-gray-300 transition-colors duration-300 border-white border-2 rounded-full"
+          className="text-white hover:bg-gray-300 transition-colors duration-300 border-white border-2 rounded-full p-2 hover:-translate-y-1 hover:scale-110"
         />
       </button>
 

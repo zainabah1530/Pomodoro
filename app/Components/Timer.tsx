@@ -102,7 +102,7 @@ function Timer() {
         className="hidden"
       />
       <div className="mt-4">
-        <p className=" font-serif text-white text-4xl">
+        <p className=" font-serif text-white text-4xl ring-2 ring-gray-500 rounded-full px-4 py-2">
           Current Mode: {mode.charAt(0).toUpperCase() + mode.slice(1)}
         </p>
       </div>
@@ -153,7 +153,7 @@ function Timer() {
         )}
         <Setting />
       </div>
-      <p className="font-serif text-9xl font-stretch-200% font-extrabold text-amber-50 ">
+      <p className="font-serif text-9xl font-stretch-200% font-extrabold text-amber-50  ">
         {formattedTime}
       </p>
     </div>
