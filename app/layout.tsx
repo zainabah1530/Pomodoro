@@ -4,6 +4,7 @@ import Image from "next/image";
 import "./globals.css";
 import Timer from "./Components/Timer";
 import Link from "next/link";
+import { AuthProvider } from "@/context/AuthContext";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -11,7 +12,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <AuthProvider>{children}</AuthProvider>
+      </body>
     </html>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useContext, useState, useRef } from "react";
-import SettingsContext from "../context/SettingContext";
+import SettingsContext from "../../context/SettingContext";
 import SettingsIcon from "@mui/icons-material/Settings";
 import { Popper, Box } from "@mui/material";
 

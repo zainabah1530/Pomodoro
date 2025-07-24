@@ -6,13 +6,12 @@ import PlayButton from "./PlayButton";
 import PauseButton from "./PauseButton";
 import Break from "./Break";
 import Pomodoro from "./Pomodoro";
-import SettingsContext from "../context/SettingContext";
+import SettingsContext from "../../context/SettingContext";
 import Setting from "./Setting";
 
 function Timer() {
   // State variables
   const settingsInfo = useContext(SettingsContext)!;
-
   const [seconds, setSeconds] = useState(25);
   const [isPaused, setIsPaused] = useState(true);
   const [mode, setMode] = useState("pomodoro");

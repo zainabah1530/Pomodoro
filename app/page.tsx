@@ -3,7 +3,8 @@
 import React from "react";
 import { Pixelify_Sans } from "next/font/google";
 import Timer from "./Components/Timer";
-import SettingsContext from "./context/SettingContext";
+import SettingsContext from "../context/SettingContext";
+import UserProfile from "./Components/UserProfile";
 
 import { useState, useContext } from "react";
 
@@ -24,11 +25,11 @@ const page = () => {
             setPomodoroTime,
             breakTime,
             setBreakTime,
-
             music,
             setMusic,
           }}
         >
+          <UserProfile />
           <div className="flex flex-col items-center justify-center h-screen ">
             <Timer />
           </div>
