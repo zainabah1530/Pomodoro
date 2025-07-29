@@ -44,8 +44,8 @@ const UserProfile = () => {
           src={user?.photoURL || ""}
           alt={user?.displayName || "User"}
           sx={{
-            width: 64,
-            height: 64,
+            width: 40,
+            height: 40,
             cursor: "pointer",
             border: "2px solid white",
           }}

@@ -1,10 +1,13 @@
-import type { Metadata } from "next";
-import { Pixelify_Sans } from "next/font/google";
-import Image from "next/image";
+// app/layout.tsx
 import "./globals.css";
-import Timer from "./Components/Timer";
-import Link from "next/link";
+import type { Metadata } from "next";
 import { AuthProvider } from "@/context/AuthContext";
+
+export const metadata: Metadata = {
+  title: "Pomodoro App",
+  description: "Productivity Pomodoro App",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -13,7 +16,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <AuthProvider>{children}</AuthProvider>
+        <AuthProvider>
+          <main className="min-h-screen  text-white font-serif">
+            {children}
+          </main>
+        </AuthProvider>
       </body>
     </html>
   );

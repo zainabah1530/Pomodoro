@@ -150,7 +150,6 @@ function Timer() {
             />
           </>
         )}
-        <Setting />
       </div>
       <p className="font-serif text-9xl font-stretch-200% font-extrabold text-amber-50  ">
         {formattedTime}
